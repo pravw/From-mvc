@@ -1,0 +1,12 @@
+<mvc:View 
+controllerName="project1.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App id="app">
+    <Page id="idPage">
+    <Input id="idIn"></Input>
+    <Button id="idBu" press=".pressMe" text="pressme" ></Button>
+    </Page>
+    </App>
+</mvc:View>
