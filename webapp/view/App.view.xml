@@ -7,10 +7,14 @@ controllerName="project1.controller.App"
     <Page id="idPage">
 
 
-    <Input id="idIn" value="{/empStr/eName}"></Input>
+    <Input id="idIn" value="{/empStr/eName}"  enabled= "{/empStr/alia}" ></Input>
 
-    <Button id="idBu" press="giveMe" text="pressMe" ></Button>
+    <Button id="idBu" press="giveMe" text="pressMe"  ></Button>
      <!-- <Button id="idBu1" press="showSomePower" text="Attach Function" ></Button> -->
+     <Switch id="idSW" change="onSwtChange" ></Switch>
+
+
+
     
 
     </Page>

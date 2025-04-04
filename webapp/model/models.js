@@ -7,6 +7,7 @@ return{
 
         var oModel = new JSONModel()
         oModel.loadData("model/mockData/praveenData.json");
+        //  oModel.setDefaultBindingMode("OneWay");
         return oModel;
     }
 

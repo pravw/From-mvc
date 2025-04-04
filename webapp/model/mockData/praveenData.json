@@ -5,7 +5,8 @@
         "eName": "krish",
         "salary": 15000,
         "currency": "EUR",
-        "smoker": false
+        "smoker": false,
+        "alia" : true
     },
     "empTab": [
         {
