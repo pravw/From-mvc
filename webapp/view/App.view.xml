@@ -1,22 +1,54 @@
-<mvc:View 
-controllerName="project1.controller.App"
+<mvc:View
+    controllerName="project1.controller.App"
     displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m"
+>
     <App id="app">
-    <Page id="idPage">
+        <Page id="idPage">
+            <content>
+                <f:SimpleForm id="idSim">
+                <f:content>
+                <Label id="idLbl1" text ="Emp Id"></Label>
+                    <Input
+                        id="idIn"
+                        value="{/empStr/empNo}"
+                        enabled="{/empStr/alia}"
+                    />
+                    <Label id="idLbl2" text ="Emp Name"></Label>
+                       <Input
+                        id="idIn2"
+                        value="{/empStr/eName}"
+                     
+                    />
+                      <Label id="idLbl3" text ="Emp Salary"></Label>
+                       <Input
+                        id="idIn3"
+                        value="{/empStr/salary}"
+                        enabled="{=${/empStr/eName} ==='krish'? false : true}"
+                     
+                    />
 
-
-    <Input id="idIn" value="{/empStr/eName}"  enabled= "{/empStr/alia}" ></Input>
-
-    <Button id="idBu" press="giveMe" text="pressMe"  ></Button>
-     <!-- <Button id="idBu1" press="showSomePower" text="Attach Function" ></Button> -->
-     <Switch id="idSW" change="onSwtChange" ></Switch>
-
-
-
-    
-
-    </Page>
+                       <Label id="idLbl4" text ="Currency"></Label>
+                       <Input
+                        id="idIn4"
+                        value="{/empStr/currency}"
+                     
+                    />
+                    </f:content>
+                </f:SimpleForm>
+                <Button
+                    id="idBu"
+                    press="giveMe"
+                    text="pressMe"
+                />
+                <!-- <Button id="idBu1" press="showSomePower" text="Attach Function" ></Button> -->
+                <Switch
+                    id="idSW"
+                    change="onSwtChange"
+                />
+            </content>
+        </Page>
     </App>
 </mvc:View>
