@@ -4,10 +4,58 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.ui.layout.form"
     xmlns="sap.m"
+    xmlns:t="sap.ui.table"
 >
     <App id="app">
         <Page id="idPage">
             <content>
+
+        <t:Table   id="idTab" rows ="{/empTab}" >
+      
+      <t:columns>
+
+       <t:Column  id="idClm" >
+       <t:label>
+       <Label id="idLb1" text = "Emp No" ></Label>
+       </t:label>
+       <t:template>
+      <Text   id="idTx1" text="{empNo}"></Text>
+       </t:template>
+       </t:Column>
+
+
+              <t:Column  id="idClm1">
+       <t:label>
+       <Label  id="idLb2" text = "Emp Name" ></Label>
+       </t:label>
+       <t:template>
+      <Text  id="idTx2" text="{eName}"></Text>
+       </t:template>
+       </t:Column>       <t:Column id="idClm2">
+       <t:label>
+       <Label  id="idLb3" text = "Emp Salary" ></Label>
+       </t:label>
+       <t:template>
+      <Text    id="idTx3" text="{salary}"></Text>
+       </t:template>
+       </t:Column>       
+       <t:Column id="idClm3" >
+       <t:label>
+       <Label   id="idLb4" text = "Currency" ></Label>
+       </t:label>
+       <t:template>
+      <Text   id="idTx4" text="{currency}"></Text>
+       </t:template>
+       </t:Column>
+
+
+ 
+      </t:columns>  
+      </t:Table>
+
+
+
+
                 <f:SimpleForm id="idSim">
                 <f:content>
                 <Label id="idLbl1" text ="Emp Id"></Label>
@@ -25,7 +73,8 @@
                       <Label id="idLbl3" text ="Emp Salary"></Label>
                        <Input
                         id="idIn3"
-                        value="{/empStr/salary}"
+                        value="{=${/empStr/eName} ==='krish'? 66666 : ${/empStr/salary}}"
+                        
                         enabled="{=${/empStr/eName} ==='krish'? false : true}"
                      
                     />

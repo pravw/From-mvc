@@ -1,0 +1,41 @@
+{
+
+    "empStr": {
+        "empNo": 500,
+        "eName": "jessica",
+        "salary": 25000,
+        "currency": "EUR",
+        "smoker": true,
+        "alia" : true
+    },
+    "empTab": [
+        {
+            "empNo": 900,
+            "eName": "Osman",
+            "salary": 4800,
+            "currency": "usd",
+            "smoker": false
+        },
+        {
+            "empNo": 901,
+            "eName": "ram",
+            "salary": 16000,
+            "currency": "EUR",
+            "smoker": false
+        },
+        {
+            "empNo": 902,
+            "eName": "krish",
+            "salary": 18000,
+            "currency": "INR",
+            "smoker": false
+        },
+        {
+            "empNo": 903,
+            "eName": "siva",
+            "salary": 18000,
+            "currency": "INR",
+            "smoker": false
+        }
+    ]
+}
