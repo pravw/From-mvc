@@ -32,9 +32,11 @@ sap.ui.define([
       createModel: function () {
       
 
-        var oModel=  models.createJSONModel();
+        var oModel=  models.createJSONModel("model/mockData/praveenData.json");
         sap.ui.getCore().setModel(oModel);
 
+        var oModel1 = models.createJSONModel("model/mockData/dataSet2.json")
+        sap.ui.getCore().setModel(oModel1,"ola");
 
 
 

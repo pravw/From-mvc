@@ -10,7 +10,14 @@
         <Page id="idPage">
             <content>
 
-        <t:Table   id="idTab" rows ="{/empTab}" >
+      
+      
+        <t:Table   id="idTab" rows ="{ola>/empTab}"     selectionMode="Single"   rowSelectionChange="onSelect"                      >
+       
+
+    
+
+        
       
       <t:columns>
 
@@ -19,7 +26,7 @@
        <Label id="idLb1" text = "Emp No" ></Label>
        </t:label>
        <t:template>
-      <Text   id="idTx1" text="{empNo}"></Text>
+      <Text   id="idTx1" text="{ola>empNo}"></Text>
        </t:template>
        </t:Column>
 
@@ -29,14 +36,14 @@
        <Label  id="idLb2" text = "Emp Name" ></Label>
        </t:label>
        <t:template>
-      <Text  id="idTx2" text="{eName}"></Text>
+      <Text  id="idTx2" text="{ola>eName}"></Text>
        </t:template>
        </t:Column>       <t:Column id="idClm2">
        <t:label>
        <Label  id="idLb3" text = "Emp Salary" ></Label>
        </t:label>
        <t:template>
-      <Text    id="idTx3" text="{salary}"></Text>
+      <Text    id="idTx3" text="{ola>salary}"></Text>
        </t:template>
        </t:Column>       
        <t:Column id="idClm3" >
@@ -44,7 +51,7 @@
        <Label   id="idLb4" text = "Currency" ></Label>
        </t:label>
        <t:template>
-      <Text   id="idTx4" text="{currency}"></Text>
+      <Text   id="idTx4" text="{ola>currency}"></Text>
        </t:template>
        </t:Column>
 

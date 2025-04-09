@@ -3,10 +3,10 @@ sap.ui.define(
     ["sap/ui/model/json/JSONModel"],
     function(JSONModel){
 return{
-    createJSONModel: function(){
+    createJSONModel: function(filePath){
 
         var oModel = new JSONModel()
-        oModel.loadData("model/mockData/praveenData.json");
+        oModel.loadData(filePath);
         //  oModel.setDefaultBindingMode("OneWay");
         return oModel;
     }
