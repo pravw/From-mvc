@@ -14,28 +14,61 @@
             "eName": "prave",
             "salary": 15000,
             "currency": "GBP",
-            "smoker": false
+            "smoker": false,
+            "gender":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLRYmUOCmiawCmbQgc9j2aqK5aOeDFubCqA&s",
+            "mstat":"M",
+            "rating":3
         },
         {
             "empNo": 100,
             "eName": "ram",
             "salary": 16000,
             "currency": "EUR",
-            "smoker": false
+            "smoker": false,
+            "gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7N8EwnOxruhOQAVFSAjDug37u86CyNR0Rg&s",
+            "mstat":"M",
+            "rating":2
         },
         {
             "empNo": 100,
             "eName": "kishore",
             "salary": 18000,
             "currency": "INR",
-            "smoker": false
+            "smoker": false,
+            "gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLRYmUOCmiawCmbQgc9j2aqK5aOeDFubCqA&s",
+            "mstat":"S",
+            "rating":3
         },
         {
             "empNo": 100,
             "eName": "siva",
             "salary": 18000,
             "currency": "INR",
-            "smoker": false
+            "smoker": true,
+            "gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7N8EwnOxruhOQAVFSAjDug37u86CyNR0Rg&s",
+            "mstat":"M",
+            "rating":2
+        },
+
+        {
+            "empNo": 100,
+            "eName": "sivaraman",
+            "salary": 18000,
+            "currency": "INR",
+            "smoker": false,
+            "gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLRYmUOCmiawCmbQgc9j2aqK5aOeDFubCqA&s",
+            "mstat":"M",
+            "rating":3
+        },
+        {
+            "empNo": 100,
+            "eName": "kumaran",
+            "salary": 18000,
+            "currency": "INR",
+            "smoker": false,
+            "gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7N8EwnOxruhOQAVFSAjDug37u86CyNR0Rg&s",
+            "mstat":"S",
+            "rating":3
         }
     ]
 }

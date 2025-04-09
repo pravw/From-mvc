@@ -4,6 +4,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.ui.layout.form"
     xmlns="sap.m"
+     xmlns:core="sap.ui.core"
     xmlns:t="sap.ui.table"
 >
     <App id="app">
@@ -12,7 +13,7 @@
 
       
       
-        <t:Table   id="idTab" rows ="{ola>/empTab}"     selectionMode="Single"   rowSelectionChange="onSelect"                      >
+        <t:Table   id="idTab" rows ="{/empTab}"     selectionMode="Single"   rowSelectionChange="onSelect"   >
        
 
     
@@ -26,7 +27,7 @@
        <Label id="idLb1" text = "Emp No" ></Label>
        </t:label>
        <t:template>
-      <Text   id="idTx1" text="{ola>empNo}"></Text>
+      <Text   id="idTx1" text="{empNo}"></Text>
        </t:template>
        </t:Column>
 
@@ -36,14 +37,14 @@
        <Label  id="idLb2" text = "Emp Name" ></Label>
        </t:label>
        <t:template>
-      <Text  id="idTx2" text="{ola>eName}"></Text>
+      <Input  id="idTx2" value="{eName}"></Input>
        </t:template>
        </t:Column>       <t:Column id="idClm2">
        <t:label>
        <Label  id="idLb3" text = "Emp Salary" ></Label>
        </t:label>
        <t:template>
-      <Text    id="idTx3" text="{ola>salary}"></Text>
+      <Text    id="idTx3" text="{salary}"></Text>
        </t:template>
        </t:Column>       
        <t:Column id="idClm3" >
@@ -51,9 +52,70 @@
        <Label   id="idLb4" text = "Currency" ></Label>
        </t:label>
        <t:template>
-      <Text   id="idTx4" text="{ola>currency}"></Text>
+      <Text   id="idTx4" text="{currency}"></Text>
        </t:template>
        </t:Column>
+
+              <t:Column id="idClm4" >
+       <t:label>
+       <Label   id="idLb5" text = "Smoker" ></Label>
+       </t:label>
+       <t:template>
+      <!-- <Text   id="idTx5" text="{smoker}"></Text> -->
+      <CheckBox id="idCk" selected="{smoker}"></CheckBox>
+       </t:template>
+       </t:Column>
+
+              <t:Column id="idClm5" >
+       <t:label>
+       <Label   id="idLb6" text = "Gender" ></Label>    
+       </t:label>
+       <t:template>
+      <Image   id="idTx6" src="{gender}"  width="20px" height="20px" ></Image>
+       </t:template>
+       </t:Column>
+
+
+     <t:Column id="idClm6" >
+       <t:label>
+       <Label   id="idLb7" text = "Marital status" ></Label>
+       </t:label>
+       <t:template>
+       <Select id="idDropDown"  selectedKey="{mStat}">
+        <items>
+        <core:Item    id="idItm1"   key="M" text="Married"></core:Item>
+        <core:Item     id="idItm2"  key="S" text="Single"></core:Item>
+        </items>
+        </Select>
+
+
+
+
+
+
+      <!-- <Text   id="idTx7" text="{mstat}"></Text> -->
+       </t:template>
+       </t:Column>
+
+            <t:Column id="idClm7" >
+       <t:label>
+       <Label   id="idLb8" text = "Rating" ></Label>
+       </t:label>
+       <t:template>
+      <RatingIndicator  id="idTx8" value="{rating}"></RatingIndicator>
+       </t:template>
+       </t:Column>
+
+
+
+
+
+
+
+
+
+
+
 
 
  
@@ -63,7 +125,7 @@
 
 
 
-                <f:SimpleForm id="idSim">
+                <f:SimpleForm id="idSim"   editable = "true">
                 <f:content>
                 <Label id="idLbl1" text ="Emp Id"></Label>
                     <Input

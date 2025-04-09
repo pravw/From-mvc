@@ -14,28 +14,50 @@
             "eName": "Osman",
             "salary": 4800,
             "currency": "usd",
-            "smoker": false
+            "smoker": false,
+            "gender": "male",
+            "mstat":"single",
+            "rating":3
         },
         {
             "empNo": 901,
             "eName": "ram",
             "salary": 16000,
             "currency": "EUR",
-            "smoker": false
+            "smoker": false,
+            "gender": "male",
+            "mstat":"single",
+            "rating":3
         },
         {
             "empNo": 902,
             "eName": "krish",
             "salary": 18000,
             "currency": "INR",
-            "smoker": false
+            "smoker": false,
+            "gender": "male",
+            "mstat":"single",
+            "rating":3
         },
         {
             "empNo": 903,
             "eName": "siva",
             "salary": 18000,
             "currency": "INR",
-            "smoker": false
+            "smoker": false,
+            "gender": "male",
+            "mstat":"Married",
+            "rating":3
+        },
+        {
+            "empNo": 904,
+            "eName": "sivaraman",
+            "salary": 18000,
+            "currency": "INR",
+            "smoker": false,
+            "gender": "female",
+            "mstat":"Married",
+            "rating":3
         }
     ]
 }
