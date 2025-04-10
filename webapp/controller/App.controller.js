@@ -29,6 +29,22 @@ sap.ui.define([
       },
 
 
+
+      onSelect: function(oEvent){
+        // 1.in internal table which index of record
+        // 2.get objct of simple form
+        // 3. bind the element with simple form
+
+        var sPath = oEvent.getParameter("rowContext").getPath();
+        var oSimple = this.getView().byId("idSim");
+        oSimple.bindElement(sPath);
+
+
+
+
+       },
+
+
       createModel: function () {
       
 

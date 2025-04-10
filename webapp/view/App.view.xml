@@ -125,24 +125,25 @@
 
 
 
-                <f:SimpleForm id="idSim"   editable = "true">
+                <f:SimpleForm id="idSim"   editable = "true" >
                 <f:content>
                 <Label id="idLbl1" text ="Emp Id"></Label>
                     <Input
                         id="idIn"
-                        value="{/empStr/empNo}"
+                        value="{empNo}"
                         enabled="{/empStr/alia}"
                     />
                     <Label id="idLbl2" text ="Emp Name"></Label>
                        <Input
                         id="idIn2"
-                        value="{/empStr/eName}"
+                        value="{eName}"
                      
                     />
                       <Label id="idLbl3" text ="Emp Salary"></Label>
                        <Input
                         id="idIn3"
-                        value="{=${/empStr/eName} ==='krish'? 66666 : ${/empStr/salary}}"
+                        value  ="{salary}"
+                       
                         
                         enabled="{=${/empStr/eName} ==='krish'? false : true}"
                      
@@ -151,7 +152,7 @@
                        <Label id="idLbl4" text ="Currency"></Label>
                        <Input
                         id="idIn4"
-                        value="{/empStr/currency}"
+                        value="{currency}"
                      
                     />
                     </f:content>
